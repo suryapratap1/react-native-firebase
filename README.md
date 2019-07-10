@@ -1,4 +1,4 @@
-#s## Getting Started
+### Getting Started
 
 > If you're only developing for one platform you can ignore the steps below that are tagged with the platform you don't require.
 
@@ -37,3 +37,33 @@ If all has gone well you'll see an initial screen like the one below.
 ## Screenshots
 
 ![preview](https://i.imgur.com/4lG4HuS.png)
+
+
+## create and Deploye your first cloud functions
+https://firebase.google.com/docs/functions/get-started
+
+cd functions && firebase functions:shell
+firebase deploy -only functions
+
+firebase functions:config:set
+firebase functions:config:get
+
+export.helloWorld=functions.https.onRequest((request,response)=>{
+    response.send("Hello from firebase");
+
+})
+
+
+<!-- 
+
+Trigger when a user get a new message and sends a notification
+
+ -->
+
+ <!-- 
+ Users have their device notification token to /users/{usersUid}/notification_tokens/{notification Token};
+ 
+ need to change so it goes whenever new message added
+ 
+ 
+  -->
